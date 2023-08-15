@@ -20,15 +20,6 @@ class Traceability_m extends CI_Model {
         // Apply search filter
         if (!empty($searchValue)) {
             $this->db->like('SEQ', $searchValue);
-            $this->db->like('VIN', $searchValue);
-            $this->db->like('QR_DISC', $searchValue);
-            $this->db->like('QR_HUB', $searchValue);
-            $this->db->like('RO_PAIRING', $searchValue);
-            $this->db->like('PAIRING_DT', $searchValue);
-            $this->db->like('JUDGEMENT', $searchValue);
-            $this->db->like('SHIFT', $searchValue);
-            $this->db->like('CREATED_DT', $searchValue);
-            $this->db->like('CREATED_BY', $searchValue);
             // Add more like statements for other columns if needed
         }
 
